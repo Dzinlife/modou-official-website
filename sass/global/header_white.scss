@@ -1,0 +1,33 @@
+.header-white{
+	color: white;
+
+	.header-bg{
+		background-color: white;
+	}
+
+	.header-logo{
+		background-image: url("/images/nav_modou_logo_white@2x.png");
+	
+	}
+
+	.header-logo-text{
+		background-image: url("/images/nav_modou_logo_text_white@2x.png");
+	}
+
+	.header-nav-account-container{
+		border: 1px solid white;
+	}
+
+	.header-nav-tab{
+		&:hover{
+			border-bottom: 2px solid white;
+		}
+	}
+
+	.header-nav-account{
+
+		&:first-child{
+			border-right: 1px solid white;
+		}
+	}
+}

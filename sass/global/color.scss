@@ -1,0 +1,12 @@
+$blue : #0b66ff;
+
+$deep-grey: #333;
+
+@mixin gradinent-purple{
+	// background-color: #473973;
+	background-color: #2a2a59;
+	background-image: 	radial-gradient(at 50% top, #414a8e 0%,rgba(98,102,157,0) 100%),
+						radial-gradient(at right top, rgba(138, 79, 188, 1) 0%,rgba(138, 79, 188,0) 60%),
+						radial-gradient(at left bottom, rgba(140, 102, 175, 0.64) 0%,rgba(140, 102, 175,0) 60%);
+width: 100%;
+}
