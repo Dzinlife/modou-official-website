@@ -38,9 +38,8 @@
 	.header-logo{
 		width: 100%;
 		height: 100%;
-		background: url("images/nav_modou_logo@2x.png") no-repeat;
+		background: image-url("nav_modou_logo@2x.png") no-repeat 50% 50%;
 		background-size: 36px;
-		background-position: 50% 50%;
 		transition: $transition-default;
 	}
 
@@ -49,9 +48,8 @@
 		top: -16px;
 		width: 100%;
 		height: 13px;
-		background: image-url("nav_modou_logo_text@2x.png") no-repeat;
+		background: image-url("nav_modou_logo_text@2x.png") no-repeat 50%;
 		background-size: 53px;
-		background-position: 50%;
 		transition: $transition-default;
 		transform: translate3d(0, 4px, 0);
 		@include opacity(0);
@@ -116,12 +114,15 @@
 	}
 
 	.header-logo{
-		background-image: url("/images/nav_modou_logo_white@2x.png");
+		background: image-url("nav_modou_logo_white@2x.png") no-repeat 50% 50%;
+		background-size: 36px;
 	
 	}
 
 	.header-logo-text{
-		background-image: url("/images/nav_modou_logo_text_white@2x.png");
+		background: image-url("nav_modou_logo_text_white@2x.png") no-repeat 50%;
+		background-size: 53px;
+
 	}
 
 	.header-account{
