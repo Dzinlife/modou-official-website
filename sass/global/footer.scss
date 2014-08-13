@@ -23,6 +23,11 @@
 		text-align: center;
 	}
 
+	a[href^=tel]{
+		text-decoration: none;
+		color: inherit;
+	}
+
 	.customer-service-time{
 		margin-top: 4px;
 		text-align: center;
