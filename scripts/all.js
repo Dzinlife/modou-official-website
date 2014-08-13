@@ -25,9 +25,11 @@ $(document).ready(function() {
 		}
 
 		$(".promo img").each(function () {
-			console.log("abc")
-			$(this).parent().css({
-				"background-image": "url(" + $(this)[0].src + ")",
+			// $(this).parent().css({
+			// 	"background-image": "url(" + $(this)[0].src + ")",
+			// })
+			$(this).css({
+				"margin-left": -$(this).width()/2 + "px",
 			})
 		});
 
