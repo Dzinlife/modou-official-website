@@ -9,7 +9,7 @@ $(document).ready(function() {
 	function init() {
 		var input = $(".promo").eq(0).width();
 
-		$("aside").height(function(){	
+		$(".aside-wrapper").height(function(){	
 			return input / mapping(input, 200, 400, 1, 1.5)
 		});
 

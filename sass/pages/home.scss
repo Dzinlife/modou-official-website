@@ -8,7 +8,7 @@ body, html{
 	min-width: 768px;
 }
 
-header{
+.header-wrapper{
 	@include gradinent-purple;
 	width: 100%;
 }
@@ -79,7 +79,7 @@ header{
 	}
 }
 
-aside{
+.aside-wrapper{
 	font-size: 0;
 	letter-spacing: 0;
 	margin: 0 auto;
