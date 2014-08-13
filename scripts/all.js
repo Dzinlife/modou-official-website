@@ -10,10 +10,10 @@ $(document).ready(function() {
 		var input = $(".promo").eq(0).width();
 
 		$("aside").height(function(){	
-			return input / mapping(input, [200, 400], [1, 1.5])
+			return input / mapping(input, 200, 400, 1, 1.5)
 		});
 
-		function mapping(input, [a1, a2], [b1, b2]) {
+		function mapping(input, a1, a2, b1, b2) {
 			var result = (input - a1) / (a2 - a1) * (b2 - b1) + b1;
 			if (result < 1) {
 				return 1;
@@ -25,6 +25,7 @@ $(document).ready(function() {
 		}
 
 		$(".promo img").each(function () {
+			console.log("abc")
 			$(this).parent().css({
 				"background-image": "url(" + $(this)[0].src + ")",
 			})

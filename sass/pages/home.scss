@@ -1,0 +1,101 @@
+@import "compass/css3";
+
+@import "global";
+@import "global/header";
+@import "global/footer";
+
+body, html{
+	min-width: 768px;
+}
+
+header{
+	@include gradinent-purple;
+	width: 100%;
+}
+
+.main{
+	min-width: 768px;
+	color: white;
+	text-align: center;
+
+	.content{
+		padding-top: 50px;
+		position: relative;
+		height: 640px;
+		margin: 0 auto;
+		width: 500px;
+	}
+
+	img{
+		width: 100%;	
+	}
+
+	.home-title{
+		width: 350px;
+		height: 100px;
+		background: image-url("home-title@2x.png") no-repeat;
+		background-size: 350px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.router-wrapper{
+		position: relative;
+	}
+
+	iframe{
+		position: absolute;
+		width: 320px;
+		height: 240px;
+		left: 50%;
+		top:0;
+		margin-left: -160px;
+		margin-top: 28px;
+		transform: scale(0.465);
+	}
+}
+
+aside{
+	font-size: 0;
+	letter-spacing: 0;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	background-color: $deep-grey;
+	padding-top: 2px;
+
+	.promo{
+		width: 33.333%;
+		height: 100%;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.promo-container{
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+		position: relative;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: center;
+	}
+
+	.promo + .promo{
+		padding-left: 2px;
+	}
+
+	.video_thumb{
+		left: 0;
+		margin-left: 0 !important;
+	}
+
+	img{
+		height: 100%;
+		position: absolute;
+		left: 0;
+		@include opacity(0);
+	}
+}
