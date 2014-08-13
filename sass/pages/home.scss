@@ -87,15 +87,14 @@ aside{
 		padding-left: 2px;
 	}
 
-	.video_thumb{
-		left: 0;
-		margin-left: 0 !important;
+	.promo1 .promo-container{
+		background-position: 0;
 	}
 
 	img{
 		height: 100%;
 		position: absolute;
 		left: 0;
-		@include opacity(0);
+		display: none;
 	}
 }
