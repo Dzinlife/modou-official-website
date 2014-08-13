@@ -43,7 +43,6 @@ html{
 		}
 
 		&:hover > .header-logo-text{
-			// @include opacity(1);
 			opacity: 1;
 			transform: translate3d(0,0,0);
 		}
@@ -112,7 +111,7 @@ html{
 		text-align: center;
 		line-height: 16px;
 		margin-top: 4px;
-		padding-top: 3px\9;
+		margin-top: 5px\9;
 		line-height: 14px\9;
 		text-decoration:none;
 		color: inherit;
