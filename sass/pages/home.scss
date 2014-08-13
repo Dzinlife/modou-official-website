@@ -31,16 +31,40 @@ header{
 	}
 
 	.home-title{
+		position: relative;
 		width: 350px;
 		height: 100px;
 		background: image-url("home-title@2x.png") no-repeat;
 		background-size: 350px;
 		margin: 0 auto;
 		margin-top: 20px;
+
+		font-size: 66px;
+		color: transparent;
+		letter-spacing: 5px;
+		white-space:nowrap;
+		text-align: center;	
+		font-size: 0px\9;
+
+		.home-subtitle{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			color: transparent;
+			font-size: 24px;
+			letter-spacing: 0px;
+			white-space:nowrap;
+			text-align: center;	
+			font-size: 0px\9;
+		}
 	}
 
 	.router-wrapper{
 		position: relative;
+		width: 100%;
+		height: 400px;
+		background: image-url("home_router.png") no-repeat;
+		background-size: 100%;
 	}
 
 	iframe{

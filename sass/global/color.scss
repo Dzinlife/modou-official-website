@@ -10,3 +10,8 @@ $deep-grey: #333;
 						radial-gradient(at left bottom, rgba(140, 102, 175, 0.64) 0%,rgba(140, 102, 175,0) 60%);
 width: 100%;
 }
+
+::selection {
+    background: #15a9f0;
+    color:white;
+}
