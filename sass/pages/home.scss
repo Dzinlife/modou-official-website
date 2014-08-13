@@ -67,8 +67,7 @@ body, html{
 		height: 400px;
 		background: image-url("home_router.png") no-repeat;
 
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/home_router.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/home_router.png', sizingMethod='scale')";
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://dzinlife.github.io/modou-official-website/images/home_router.png', sizingMethod='scale');
 
 		background-size: 100%;
 	}
