@@ -36,6 +36,8 @@ body, html{
 		height: 100px;
 		background: image-url("home-title@2x.png") no-repeat;
 		background-size: 350px;
+		
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/home-title@2x.png', sizingMethod='scale');
 		margin: 0 auto;
 		margin-top: 20px;
 
@@ -67,7 +69,6 @@ body, html{
 		background-size: 100%;
 
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/home_router.png', sizingMethod='scale');
-		// -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/home_router.png', sizingMethod='scale')";
 	}
 
 	iframe{
