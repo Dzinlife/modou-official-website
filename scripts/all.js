@@ -38,6 +38,7 @@ $(document).ready(function() {
 	$(".promo img").load(function(){
 		$(this).css({
 			"margin-left": -$(this).width()/2 + "px",
+			"left": "50%",
 		})
 	})
 

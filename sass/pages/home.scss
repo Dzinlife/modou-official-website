@@ -6,6 +6,9 @@
 
 body, html{
 	min-width: 768px;
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: $deep-grey
 }
 
 .header-wrapper{
@@ -14,14 +17,13 @@ body, html{
 }
 
 .main{
-	min-width: 768px;
 	color: white;
 	text-align: center;
 
 	.content{
-		padding-top: 50px;
+		padding-top: 40px;
 		position: relative;
-		height: 640px;
+		height: 600px;
 		margin: 0 auto;
 		width: 500px;
 	}
@@ -58,6 +60,17 @@ body, html{
 			text-align: center;	
 			font-size: 0px\9;
 		}
+	}
+
+	.learn-more{
+		position: relative;
+		display: block;
+		width: 160px;
+		margin: 0 auto;
+		margin-top: 20px;
+		height: 40px;
+		line-height: 40px;
+		color: #53baff;
 	}
 
 	.router-wrapper{
@@ -121,6 +134,5 @@ body, html{
 	img{
 		height: 100%;
 		position: absolute;
-		left: 50%;
 	}
 }
