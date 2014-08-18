@@ -1,10 +1,10 @@
 .footer-wrapper{
 	width: 100%;
 	height: 280px;
-	background-color: $deep-grey;
+	background-color: $subtle-grey;
 	padding: 30px $global-padding 0;
 	box-sizing: border-box;
-	color: #808080;
+	color: $medium-grey;
 	font-size: 13px;
 	white-space:nowrap;
 	position: relative;
@@ -18,7 +18,7 @@
 		font-size: 18px;
 		letter-spacing: 3px;
 		line-height: 32px;
-		color: white;
+		color: $deep-grey;
 		font-weight: lighter;
 		text-align: center;
 	}
@@ -36,8 +36,8 @@
 	}
 
 	.customer-service-online{
-		background-color: #555;
-		color: #ccc;
+		background-color: $violet;
+		color: white;
 		border-radius: 2px;
 		margin-top: 16px;
 		height: 30px;
@@ -47,8 +47,7 @@
 		transition: $transition-default;
 
 		&:hover{
-			background-color: #eee;
-			color: $blue;
+			background-color: darken($violet, 10%);
 		}
 	}
 
@@ -65,7 +64,7 @@
 		}
 
 		a{
-			color: #808080;
+			color: $medium-grey;
 			line-height: 26px;
 			border-bottom: 1px solid transparent;
 			transition: $transition-default;
@@ -73,14 +72,14 @@
 			text-decoration: none;
 
 			&:hover{
-				border-bottom: 1px solid #ccc;
-				color: #ccc;
+				border-bottom: 1px solid $medium-grey;
+				color: $deep-grey;
 			}
 		}
 	}
 
 	.colum-title{
-		border-bottom: 1px solid #555;
+		border-bottom: 1px solid $light-grey;
 		height: 28px;
 		line-height: 28px;
 		margin-bottom: 3px;
@@ -89,7 +88,7 @@
 	.footer-bottom{
 		left: $global-padding;
 		right: $global-padding;
-		border-top: 1px solid #555;
+		border-top: 1px solid $light-grey;
 		position: absolute;
 		border-bottom: 0;
 		height: 50px;
