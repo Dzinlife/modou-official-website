@@ -24,22 +24,39 @@ $(document).ready(function() {
 			}
 		}
 
-		$(".promo img").each(function () {
-			// $(this).parent().css({
-			// 	"background-image": "url(" + $(this)[0].src + ")",
-			// })
-			$(this).css({
-				"margin-left": -$(this).width()/2 + "px",
-			})
-		});
-
+		img_resize()
 	}
 
-	$(".promo img").load(function(){
-		$(this).css({
-			"margin-left": -$(this).width()/2 + "px",
-			"left": "50%",
+	function img_resize () {
+		$(".promo img").each(function(){
+			$(this).css({
+				"margin-left": -$(this).width()/2 + "px",
+				"left": "50%",
+			})
 		})
+		if ($(window).width() > 1000) {
+			$(".main-poster").width("1600").css({
+				"margin-top": function() {
+					return -($(this).height() - ( $(".body-wrapper").height() - $(".aside-wrapper").height() ) )/2 + "px";
+				},
+				"margin-left": function() {
+					return ( $("body").width() - $(".main-poster").width() )/2
+				}
+			});
+		}else{
+			$(".main-poster").width(1200).css({
+				"margin-top": function() {
+					return -($(this).height() - ( $(".body-wrapper").height() - $(".aside-wrapper").height() ) )/2 + "px";
+				},
+				"margin-left": function() {
+					return ( $("body").width() - $(".main-poster").width() )/2
+				}
+			})
+		}
+	}
+	
+	$(".promo img, .main-poster").load(function(){
+		init();
 	})
 
 	init();
