@@ -1,5 +1,5 @@
 /*
-Syntax error: Undefined variable: "$deep-grey".
+Syntax error: Undefined variable: "$subtle-grey".
         on line 4 of /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss
 
 1: /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss
@@ -76,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$deep-grey\".\A         on line 4 of /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss\A \A 1: /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss"; }
+  content: "Syntax error: Undefined variable: \"$subtle-grey\".\A         on line 4 of /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss\A \A 1: /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss"; }
