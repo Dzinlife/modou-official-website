@@ -7,23 +7,6 @@ $(document).ready(function() {
 	})
 
 	function init() {
-		var input = $(".promo").eq(0).width();
-
-		$(".aside-wrapper").height(function(){	
-			// return input / mapping(input, 256, 480, 1.4, 2)
-		});
-
-		function mapping(input, a1, a2, b1, b2) {
-			var result = (input - a1) / (a2 - a1) * (b2 - b1) + b1;
-			if (result < b1) {
-				return b1;
-			}else if (result > b2){
-				return b2;
-			}else{
-				return result;
-			}
-		}
-
 		// img_resize()
 	}
 

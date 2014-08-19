@@ -9,7 +9,7 @@ body, html{
 	min-width: 768px;
 	max-width: 1444px;
 	margin: 0 auto;
-	background-color: white;
+	background-color: $subtle-grey;
 }
 
 .body-wrapper{
@@ -18,6 +18,7 @@ body, html{
 	min-height: 768px;
 	max-height: 1000px;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .main{
@@ -32,8 +33,8 @@ body, html{
 		position: absolute;
 		width: 100%;
 		height: 200px;
-		top: 58%;
-		margin-top: -5%;
+		top: 60%;
+		margin-top: -6%;
 		color: black;
 
 		.main-title{
@@ -48,25 +49,38 @@ body, html{
 		.main-link{
 			position: relative;
 			margin-top: 10px;
+			color: #1eabfb;
 		}
 	}
 
 	.main-poster-wrapper{
-		width: 100%;
+		width: 2560px;
 		height: 100%;
 		position: absolute;
-		top: 0;
-		left: 0;
+		left: 50%;
+		margin-left: -1280px;
 	}
 
 	.main-poster{
 		position: absolute;
-		width: 100%;
+		width: 50%;
 		left: 0;
 		right: 0;
 		top: -30%;
 		bottom: 0;
 		margin: auto;
+	}
+
+	@media (min-width: 1000px) {
+		.main-poster{
+			width: 64%;
+		}
+	}
+
+	@media (min-width: 1300px) {
+		.main-poster{
+			width: 72%;
+		}
 	}
 
 	.home-title{
@@ -138,7 +152,6 @@ body, html{
 	font-size: 0;
 	letter-spacing: 0;
 	margin: 0 auto;
-	// height: 220px;
 	width: 100%;
 	background-color: $subtle-grey;
 	padding-top: 2px;
@@ -150,10 +163,10 @@ body, html{
 	}
 
 	.promo-extender{
-		height: 200px;
+		height: 180px;
 		width: 100%;
 		position: relative;;
-		padding-top: 10%;
+		padding-top: 15%;
 	}
 
 	.promo-fuller{
@@ -164,17 +177,12 @@ body, html{
 	}
 
 	.promo-container{
-		background-color: black;
+		background-color: $medium-grey;
 		width: 100%;
 		height: 100%;
 		box-sizing: border-box;
 		overflow: hidden;
 		position: relative;
-	}
-
-	.video_thumb{
-		// left: 0 !important;
-		// margin-left: 0 !important;
 	}
 
 	.promo + .promo{
