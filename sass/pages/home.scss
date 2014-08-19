@@ -22,6 +22,7 @@ body, html{
 
 .main{
 	height: 100%;
+	width: 100%;
 	background-color: #eae9e4;
 	color: white;
 	text-align: center;
@@ -53,19 +54,17 @@ body, html{
 	.main-poster-wrapper{
 		width: 100%;
 		height: 100%;
-		padding-left: 10%;
-		padding-right: 10%;
-		margin-left: -10%;
-		margin-top: -10%;
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
-	img{
+	.main-poster{
 		position: absolute;
 		width: 100%;
 		left: 0;
 		right: 0;
-		top: 0;
+		top: -30%;
 		bottom: 0;
 		margin: auto;
 	}
@@ -139,16 +138,29 @@ body, html{
 	font-size: 0;
 	letter-spacing: 0;
 	margin: 0 auto;
-	height: 220px;
+	// height: 220px;
 	width: 100%;
 	background-color: $subtle-grey;
 	padding-top: 2px;
 
 	.promo{
 		width: 33.333%;
-		height: 100%;
 		display: inline-block;
 		box-sizing: border-box;
+	}
+
+	.promo-extender{
+		height: 200px;
+		width: 100%;
+		position: relative;;
+		padding-top: 10%;
+	}
+
+	.promo-fuller{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		bottom: 0;
 	}
 
 	.promo-container{
@@ -158,9 +170,6 @@ body, html{
 		box-sizing: border-box;
 		overflow: hidden;
 		position: relative;
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-position: center;
 	}
 
 	.video_thumb{

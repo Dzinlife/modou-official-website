@@ -10,7 +10,7 @@ $(document).ready(function() {
 		var input = $(".promo").eq(0).width();
 
 		$(".aside-wrapper").height(function(){	
-			return input / mapping(input, 256, 480, 1.4, 2)
+			// return input / mapping(input, 256, 480, 1.4, 2)
 		});
 
 		function mapping(input, a1, a2, b1, b2) {
@@ -28,12 +28,6 @@ $(document).ready(function() {
 	}
 
 	function img_resize () {
-		$(".promo img").each(function(){
-			$(this).css({
-				"margin-left": -$(this).width()/2 + "px",
-				"left": "50%",
-			})
-		})
 		if ($(window).width() > 1000) {
 			$(".main-poster").width("1600").css({
 				"margin-top": function() {
@@ -55,7 +49,7 @@ $(document).ready(function() {
 		}
 	}
 	
-	$(".promo img, .main-poster").load(function(){
+	$(".main-poster").load(function(){
 		init();
 	})
 
