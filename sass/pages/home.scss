@@ -172,13 +172,20 @@ body, html{
 		padding-left: 2px;
 	}
 
-	.promo1 .promo-container{
-		background-position: 0;
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/router_video_thumb.jpg', sizingMethod='scale');
+	.img-wrapper{
+		width: 200%;
+		height: 100%;
+		position: absolute;
+		left: -50%;
 	}
 
 	img{
 		height: 100%;
 		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 }
