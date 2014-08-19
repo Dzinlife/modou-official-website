@@ -4,7 +4,6 @@
 	padding: 0 $global-padding;
 	padding-top: 26px;
 	box-sizing: border-box;
-	font-size: 15px;
 	position: absolute;
 	color: black;
 	z-index: 100;
@@ -84,6 +83,7 @@
 		margin: 0 16px;
 		line-height: 24px;
 		text-decoration:none;
+		font-size: 16px;
 		color: inherit;
 		border-bottom: 2px solid rgba(0,0,0,0);
 		transition: $transition-default;
@@ -96,14 +96,12 @@
 	.header-nav-account{
 		display: inline-block;
 		width: 80px;
+		font-size: 15px;
 		text-align: center;
 		line-height: 12px;
 		padding-top: 1px;
-		padding-bottom: 1px;
-		// padding-top: 0px\9;
-		// padding-bottom: 1px\9; 
+		padding-bottom: 1px; 
 		margin-top: 5px;
-		// margin-top: 6px\9;
 		text-decoration:none;
 		color: inherit;
 		transition: $transition-default;
