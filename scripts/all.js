@@ -24,7 +24,7 @@ $(document).ready(function() {
 			}
 		}
 
-		img_resize()
+		// img_resize()
 	}
 
 	function img_resize () {
