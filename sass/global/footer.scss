@@ -108,4 +108,19 @@
 		line-height: 50px;
 		font-size: 10px;
 	}
+
+	@media (min-width: 1460px) {
+		.footer-bottom{
+			left: 0;
+			right: 0;
+		}
+	}
+
 }
+
+	@media (min-width: 1460px) {
+		.footer-wrapper{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
