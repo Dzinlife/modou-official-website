@@ -4,8 +4,6 @@
 @import "global/header";
 @import "global/footer";
 
-@import "compass/utilities/general/min";
-
 body, html{
 	height: 100%;
 	min-width: 768px;
@@ -166,7 +164,7 @@ body, html{
 
 	}
 
-	.promo-extender{
+	.promo-height-wrapper{
 		height: 180px;
 		width: 100%;
 		position: relative;;
@@ -174,7 +172,7 @@ body, html{
 		background-color: $light-grey;
 	}
 
-	.promo-fuller{
+	.promo-stretch-wrapper{
 		position: absolute;
 		width: 100%;
 		top: 0;
@@ -193,7 +191,7 @@ body, html{
 		padding-left: 2px;
 	}
 
-	.img-wrapper{
+	.img-width-wrapper{
 		width: 200%;
 		height: 100%;
 		position: absolute;
