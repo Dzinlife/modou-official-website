@@ -1,8 +1,10 @@
 @import "compass/css3";
 
-@import "global";
-@import "global/header";
-@import "global/footer";
+@import "global/color";
+@import "global/typography";
+@import "global/layout";
+@import "global/transition";
+
 
 body, html{
 	height: 100%;
@@ -34,8 +36,8 @@ body, html{
 		position: absolute;
 		width: 100%;
 		height: 200px;
-		top: 60%;
-		margin-top: -6%;
+		top: 55%;
+		margin-top: -3%;
 		color: black;
 
 		.main-title{
@@ -47,10 +49,60 @@ body, html{
 			margin-top: 10px;
 			position: relative;
 		}
-		.main-link{
+		.main-links{
 			position: relative;
-			margin-top: 10px;
-			color: #1eabfb;
+			margin-top: 12px;
+			font-size: 0;
+			height: 28px;
+			button{
+				margin-top: 0;
+				width: 120px;
+				height: 28px;
+				background-color: white;
+				border: none;
+				font-size: 14px;
+				margin-left: -1px;
+				-webkit-appearance: none;
+				border: 1px solid black;
+				transition: 0.4s $easeOutExpo;
+				cursor: pointer;
+
+				&:nth-child(1){
+					border-radius: 4px 0 0 4px;
+				}
+
+				&:nth-child(2){
+				}
+
+				&:nth-child(3){
+					border-radius: 0 4px 4px 0;
+				}
+
+				&:hover{
+					background-color: $violet;
+					color: white;
+				}
+
+				&:active{
+					background-color: darken($violet , 10%)
+				}
+			}
+		}
+		.main-share{
+			display: inline-block;
+			position: absolute;
+			img{
+				width: 32px;
+				margin-top: -4px;
+				float: left;
+				margin-left: 12px;
+				// background-color: red;
+			}
+
+			.main-share-weibo{
+			}
+			.main-share-weixin{
+			}
 		}
 	}
 
@@ -64,23 +116,23 @@ body, html{
 
 	.main-poster{
 		position: absolute;
-		width: 50%;
+		width: 48%;
 		left: 0;
 		right: 0;
-		top: -30%;
+		top: -20%;
 		bottom: 0;
 		margin: auto;
 	}
 
 	@media (min-width: 1000px) {
 		.main-poster{
-			width: 64%;
+			width: 60%;
 		}
 	}
 
 	@media (min-width: 1300px) {
 		.main-poster{
-			width: 72%;
+			width: 70%;
 		}
 	}
 
