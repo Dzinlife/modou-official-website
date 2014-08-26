@@ -25,7 +25,9 @@
 	}
 
 	.header-nav-account{
-
+		background-color: transparent;
+		border: none;
+		
 		&:first-child{
 			border-right: 1px solid white;
 		}

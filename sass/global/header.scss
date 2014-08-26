@@ -66,18 +66,6 @@
 		margin-left: 18px;
 	}
 
-	.header-account{
-		display: inline-block;
-		border: 1px solid black;
-		height: 25px;
-		box-sizing: border-box;
-		float: right;
-
-		&:first-child{
-			border-right: 1px solid black;
-		}
-	}
-
 	.header-nav-tab{
 		display: inline-block;
 		margin: 0 16px;
@@ -93,26 +81,56 @@
 		}
 	}
 
-	.header-nav-account{
+	.header-account{
 		display: inline-block;
-		width: 80px;
-		font-size: 15px;
-		text-align: center;
-		line-height: 12px;
-		padding-top: 1px;
-		padding-bottom: 1px; 
-		margin-top: 5px;
-		text-decoration:none;
-		color: inherit;
-		transition: $transition-default;
-
+		box-sizing: border-box;
+		float: right;
+		font-size: 0;
+		font-size: 0.1px\9;
+		border: 1px solid black;
 		&:first-child{
 			border-right: 1px solid black;
 		}
+	}
+
+	.header-nav-account{
+		display: inline-block;
+		width: 80px;
+		height: 24px;
+		font-size: 15px;
+		border: none;
+		line-height: 24px;
+		vertical-align: center;
+		padding-top: 1px;
+		padding-top: 2px\9;
+		background-color: transparent;
+		text-decoration:none;
+		color: inherit;
+		cursor: pointer;
+		-webkit-appearance: none;
+		transition: $transition-default;
+
+		&:first-child{
+			border-right: none;
+		}
 
 		&:hover{
-			@include opacity(0.7);
+			background-color: white;
 		}
+
+		&:active{
+			background-color: black;
+			color: white;
+		}
+	}
+
+	.divider{
+		display: inline-block;
+		position: absolute;
+		width: 1px;
+		height: 13px;
+		margin-top: 6px;
+		background-color: black;
 	}
 }
 
@@ -121,7 +139,7 @@
 	color: white;
 
 	.header-bg{
-		background-color: white;
+		// background-color: white;
 	}
 
 	.header-logo{
@@ -139,7 +157,19 @@
 	}
 
 	.header-account{
-		border: 1px solid white;
+		border-color: white;
+	}
+
+	.header-nav-account{
+		&:hover{
+			background-color: $medium-grey;
+			background-color: rgba(0,0,0,0.5);
+		}
+
+		&:active{
+			background-color: white;
+			color: black;
+		}
 	}
 
 	.header-nav-tab{
@@ -148,10 +178,7 @@
 		}
 	}
 
-	.header-nav-account{
-
-		&:first-child{
-			border-right: 1px solid white;
-		}
+	.divider{
+		background-color: white;
 	}
 }
