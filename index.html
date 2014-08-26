@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" charset="utf8">
+		<meta name="viewport" content="width=device-width, user-scalable=yes" charset="utf8">
+		<meta id="viewport" name='viewport'>
+		<script>
+		    (function(doc) {
+		        var viewport = document.getElementById('viewport');
+		        if ( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+		            viewport.setAttribute("content", "initial-scale=0.3");
+		        } else if ( navigator.userAgent.match(/iPad/i) ) {
+		            viewport.setAttribute("content", "initial-scale=0.7");
+		        }
+		    }(document));
+		</script>
+
 		<link rel="stylesheet" href="stylesheets/global.css" type="text/css"/>
 		<link rel="stylesheet" href="stylesheets/pages/home.css" type="text/css"/>
 		<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
