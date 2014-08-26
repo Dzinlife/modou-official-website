@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined variable: "$subtle-grey".
-        on line 4 of /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss
+        on line 4 of /Users/dzinlife/Dropbox/mashroom/prototype dev/home/sass/global/footer.scss
 
-1: /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss
+1: /Users/dzinlife/Dropbox/mashroom/prototype dev/home/sass/global/footer.scss
 
 Backtrace:
-/Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss:4
+/Users/dzinlife/Dropbox/mashroom/prototype dev/home/sass/global/footer.scss:4
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -76,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$subtle-grey\".\A         on line 4 of /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss\A \A 1: /Users/dzinlife/Dropbox/mashroom/web/home/sass/global/footer.scss"; }
+  content: "Syntax error: Undefined variable: \"$subtle-grey\".\A         on line 4 of /Users/dzinlife/Dropbox/mashroom/prototype dev/home/sass/global/footer.scss\A \A 1: /Users/dzinlife/Dropbox/mashroom/prototype dev/home/sass/global/footer.scss"; }
